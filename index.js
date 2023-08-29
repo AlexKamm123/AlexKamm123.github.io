@@ -10,11 +10,11 @@ const modalHeader = document.querySelector(".modal h1");
 videoButtons.forEach(function (button) {
   button.addEventListener("click", function (event) {
     setVideo(button.id);
-    video.load();
     modal.showModal();
   });
 });
 
+// Opens correct link for each code button
 codeButtons.forEach(function (button) {
   button.addEventListener("click", function (event) {
     id = button.previousSibling.previousSibling.id;
@@ -28,18 +28,18 @@ codeButtons.forEach(function (button) {
   });
 });
 
+// Closes modal on click
 closeBtn.addEventListener("click", function () {
   modal.close();
-  video.pause();
 });
 
+// Sets the video src and modal title
 function setVideo(buttonId) {
-  videoSource = document.getElementById("video-source");
   srcMap = {
-    sortbutton: "media/videos/ExternalSort.mp4",
-    stockbutton: "media/videos/Stock_Analyzer.mp4",
-    genebutton: "media/videos/Gene_Drug_Network.mp4",
-    ddbutton: "media/videos/DesignatedDriver.mp4",
+    sortbutton: "https://www.youtube.com/embed/A1bkmuzs1hI?si=u2da3a0eV7EiFftU",
+    stockbutton: "https://www.youtube.com/embed/o6L5NcfFgWU?si=fYoldTNthSI-tYfZ",
+    genebutton: "https://www.youtube.com/embed/ypNLaAExpYs?si=W1krJr5npenWvp5O",
+    ddbutton: "https://www.youtube.com/embed/gb9hZIAqGPw?si=65WfEQwl5UZic5mm",
   };
 
   titleMap = {
@@ -53,5 +53,5 @@ function setVideo(buttonId) {
   modalTitle = titleMap[buttonId];
 
   modalHeader.innerHTML = modalTitle;
-  videoSource.src = src;
+  video.src = src;
 }
