@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Kammann</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+
+        <!-- Blue blur for added background effect  -->
+        <div class="blur"></div>
+
+        <!-- Profile Section  -->
+        <div class="header">
+            <div class="introduction">
+                <div class="intro-box">
+
+                    <!-- Header and profile picture  -->
+                    <div class="top">
+                        <h1>Alex Kammann <br> <span><h2>Software Engineer</h2></span></h1>
+                        <img src="media/images/profile3.jpg" class="img-profile">
+                    </div>
+                    <p>I'm a Computer Science student at Virginia Tech with a passion for software development and data science. 
+                        I have a strong foundation in web development along with Java, Python and C. I look forward to taking on new challenges
+                        and applying my skills to real world projects.
+                    </p>
+
+                    <!-- To download resume  -->
+                    <a href="media/pdf/resume.pdf" download="Resume_Alex_Kammann.pdf">
+                        <button type="button" class="btn-download" id="btn-download"> Download Resume</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Computer image on side  -->
+            <div class="side-image">
+                <img src="media/images/night_comp.png" class="img-large">
+            </div>
+            <h1 class="underline">Projects</h1>
+        </div>
+
+        <!-- Projects section  -->
+        <div class="projects">
+            
+            <!-- Gene Drug Network  -->
+            <div class="project">
+                <div class="project-header">
+                    <h1>Gene-Drug-Network</h1>
+                </div>
+
+                <!-- Text  -->
+                <div class="project-body">
+                    <h3>Company tool used to effciently reccomend drugs to treat patients
+                    with rare genetic diseases</h3>
+                    <ul>
+                        <li>Extracted large amounts of data from medical databases</li>
+                        <li>Created a large network of connections between drugs and their targeted genes</li>
+                        <li>Built a responsive front-end design using HTML, JavaScript and CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="links">
+                    <button class="btn-video" id="genebutton">
+                        Play Video
+                        <span class="material-icons-sharp">
+                            play_circle
+                        </span>
+                    </button>
+                    <button class="btn-disabled" disabled="true">
+                        View Code
+                        <span class="material-icons-sharp">
+                            code
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Designated Drivers  -->
+            <div class="project">
+                <div class="project-header">
+                    <h1>Designated Drivers</h1>
+                </div>
+
+                <!-- Text  -->
+                <div class="project-body">
+                    <h3>Ride sharing platform for organized events to
+                        reduce drunk driving
+                    </h3>
+                    <ul>
+                        <li>Allows organizations to create and mangae public or private events</li>
+                        <li>Driver codes allow the designated drivers to view the ride requests for an event</li>
+                        <li>Drivers can view a list of reqeusts to the event and be automatically routed to the guest</li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="links">
+                    <button class="btn-video" id="ddbutton">
+                        Play Video
+                        <span class="material-icons-sharp">
+                            play_circle
+                        </span>
+                    </button>
+                    <button class="btn-code">
+                        View Code
+                        <span class="material-icons-sharp">
+                            code
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stock Analyzer  -->
+            <div class="project">
+                <div class="project-header">
+                    <h1>Stock Analyzer</h1>
+                </div>
+
+                <!-- Text  -->
+                <div class="project-body">
+                    <h3>Uses webscraping to caluclate 5 common 
+                        valuaiton ratios for inputted stocks</h3>
+                    <ul>
+                        <li>Scrapes company data from balance sheet using Python’s Beautiful Soup library </li>
+                        <li>Calculates 5 valuation ratios from the previous quarters data</li>
+                        <li>Graphs the results using Matplotlib</li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="links">
+                    <button class="btn-video" id="stockbutton">
+                        Play Video
+                        <span class="material-icons-sharp">
+                            play_circle
+                        </span>
+                    </button>
+                    <button class="btn-code"">
+                        View Code
+                        <span class="material-icons-sharp">
+                            code
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- External Sorting Algorithm  -->
+            <div class="project">
+                <div class="project-header">
+                    <h1>External Sort</h1>
+                </div>
+
+                <!-- Text  -->
+                <div class="project-body">
+                    <h3>Class project to externally sort a large binary file of key value pairs</h3>
+                    <ul>
+                        <li>Utilizes java's Byte and ByteBuffer class to parse through binary data</li>
+                        <li>Implements heaps and buffers to do a replacement selection sort</li>
+                        <li>Finishes sorting with an 8 way multiway merge sort</li>
+                    </ul>
+                </div>
+
+                <!-- Buttons  -->
+                <div class="links">
+                    <button class="btn-video" id="sortbutton">
+                        Play Video
+                        <span class="material-icons-sharp">
+                            play_circle
+                        </span>
+                    </button>
+                    <button class="btn-code">
+                        View Code
+                        <span class="material-icons-sharp">
+                            code
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Pop up when "Play Video" is clicked  -->
+    <dialog id="modal" class="modal">
+            <div class="modal-container">
+
+                <!-- Header  -->
+                <div class="header">
+                    <h1>Modal Header</h1>
+                    <button id="btn-close">
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Video  -->
+                <div class="video">
+                    <video controls id="myvideo">
+                        <source src="" type="video/mp4" id="video-source">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+        </dialog>
+
+    </div>
+
+    <!-- Include script  -->
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
