@@ -36,10 +36,14 @@ closeBtn.addEventListener("click", function () {
 // Sets the video src and modal title
 function setVideo(buttonId) {
   srcMap = {
-    sortbutton: "https://www.youtube.com/embed/A1bkmuzs1hI?si=u2da3a0eV7EiFftU",
-    stockbutton: "https://www.youtube.com/embed/o6L5NcfFgWU?si=fYoldTNthSI-tYfZ",
-    genebutton: "https://www.youtube.com/embed/ypNLaAExpYs?si=W1krJr5npenWvp5O",
-    ddbutton: "https://www.youtube.com/embed/gb9hZIAqGPw?si=65WfEQwl5UZic5mm",
+    sortbutton:
+      "https://www.youtube.com/embed/A1bkmuzs1hI?si=u2da3a0eV7EiFftU&&vq=hd720p60",
+    stockbutton:
+      "https://www.youtube.com/embed/o6L5NcfFgWU?si=fYoldTNthSI-tYfZ&vq=hd720p60",
+    genebutton:
+      "https://www.youtube.com/embed/ypNLaAExpYs?si=W1krJr5npenWvp5O&vq=hd720p60",
+    ddbutton:
+      "https://www.youtube.com/embed/gb9hZIAqGPw?si=65WfEQwl5UZic5mm&vq=hd720p60",
   };
 
   titleMap = {
